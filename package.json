@@ -1,0 +1,8 @@
+{
+  "name": "yarn-workspaces-foreach-reproduce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LaurensUP/yarn-workspaces-foreach-reproduce.git",
+  "author": "Laurens <laurens.decock@unifiedpost.com>",
+  "license": "MIT"
+}
