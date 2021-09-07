@@ -4,5 +4,15 @@
   "main": "index.js",
   "repository": "https://github.com/LaurensUP/yarn-workspaces-foreach-reproduce.git",
   "author": "Laurens <laurens.decock@unifiedpost.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "g:jest": "cd $INIT_CWD && jest",
+    "test-all": "yarn workspaces foreach --parallel --verbose run test"
+  },
+  "devDependencies": {
+    "jest": "^27.1.0"
+  }
 }

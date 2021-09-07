@@ -1,0 +1,7 @@
+{
+  "name": "package-6",
+  "packageManager": "yarn@3.0.2",
+  "scripts": {
+    "test": "yarn g:jest"
+  }
+}
