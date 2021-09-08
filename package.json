@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "g:jest": "cd $INIT_CWD && jest",
-    "test-all": "yarn workspaces foreach --parallel --verbose run test"
+    "test-all": "yarn workspaces foreach --parallel --topological-dev --verbose run test --logHeapUsage --changedSince origin/main"
   },
   "devDependencies": {
     "jest": "^27.1.0"

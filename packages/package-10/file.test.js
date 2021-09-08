@@ -1,5 +1,10 @@
+const { printMemoryUsage } = require('../../shared');
+
 describe('a test suite', () => {
   it('runs', () => {
-    expect(1).toBe(1);
+    let arr = Array(1e7).fill("This will cost a lot of memory");
+    arr.reverse();
+    printMemoryUsage();
+    expect(arr.length).toBe(1e7);
   })
-})
+});

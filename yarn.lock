@@ -1057,6 +1057,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"base@workspace:*, base@workspace:packages/base":
+  version: 0.0.0-use.local
+  resolution: "base@workspace:packages/base"
+  languageName: unknown
+  linkType: soft
+
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11
   resolution: "brace-expansion@npm:1.1.11"
@@ -3087,60 +3093,80 @@ fsevents@^2.3.2:
 "package-10@workspace:packages/package-10":
   version: 0.0.0-use.local
   resolution: "package-10@workspace:packages/package-10"
+  dependencies:
+    package-3: "workspace:*"
   languageName: unknown
   linkType: soft
 
-"package-1@workspace:packages/package-1":
+"package-1@workspace:*, package-1@workspace:packages/package-1":
   version: 0.0.0-use.local
   resolution: "package-1@workspace:packages/package-1"
+  dependencies:
+    base: "workspace:*"
   languageName: unknown
   linkType: soft
 
-"package-2@workspace:packages/package-2":
+"package-2@workspace:*, package-2@workspace:packages/package-2":
   version: 0.0.0-use.local
   resolution: "package-2@workspace:packages/package-2"
+  dependencies:
+    base: "workspace:*"
   languageName: unknown
   linkType: soft
 
-"package-3@workspace:packages/package-3":
+"package-3@workspace:*, package-3@workspace:packages/package-3":
   version: 0.0.0-use.local
   resolution: "package-3@workspace:packages/package-3"
+  dependencies:
+    base: "workspace:*"
   languageName: unknown
   linkType: soft
 
-"package-4@workspace:packages/package-4":
+"package-4@workspace:*, package-4@workspace:packages/package-4":
   version: 0.0.0-use.local
   resolution: "package-4@workspace:packages/package-4"
+  dependencies:
+    base: "workspace:*"
   languageName: unknown
   linkType: soft
 
 "package-5@workspace:packages/package-5":
   version: 0.0.0-use.local
   resolution: "package-5@workspace:packages/package-5"
+  dependencies:
+    package-2: "workspace:*"
   languageName: unknown
   linkType: soft
 
 "package-6@workspace:packages/package-6":
   version: 0.0.0-use.local
   resolution: "package-6@workspace:packages/package-6"
+  dependencies:
+    package-3: "workspace:*"
   languageName: unknown
   linkType: soft
 
 "package-7@workspace:packages/package-7":
   version: 0.0.0-use.local
   resolution: "package-7@workspace:packages/package-7"
+  dependencies:
+    package-4: "workspace:*"
   languageName: unknown
   linkType: soft
 
 "package-8@workspace:packages/package-8":
   version: 0.0.0-use.local
   resolution: "package-8@workspace:packages/package-8"
+  dependencies:
+    package-1: "workspace:*"
   languageName: unknown
   linkType: soft
 
 "package-9@workspace:packages/package-9":
   version: 0.0.0-use.local
   resolution: "package-9@workspace:packages/package-9"
+  dependencies:
+    package-2: "workspace:*"
   languageName: unknown
   linkType: soft
 
